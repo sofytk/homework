@@ -11,11 +11,7 @@ public class task3 {
                     result += "";
                     break;
                 case 2:
-                    result += "A";
-                    break;
                 case 3:
-                    result += "A";
-                    break;
                 case 4:
                     result += "A";
                     break;
