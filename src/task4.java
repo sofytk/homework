@@ -13,7 +13,7 @@ public class task4 {
 
         for (int i = 1; i < array.length ; i++) {
             int m = array[i-1];
-            if (m < array[i]) {
+            if (m < array[i] && array[i] != 0) {
                 System.out.print(array[i] + " ");
 
             }
@@ -28,7 +28,7 @@ public class task4 {
 //        for (int i = 0; i<len; i++) {
 //            min = n;
 //            n = in.nextInt();
-//            if (min < n) {
+//            if (min < n && n!=0) {
 //                System.out.print(n + " ");
 //            }
 //        }
