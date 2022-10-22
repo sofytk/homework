@@ -1,23 +1,19 @@
 import java.util.Scanner;
-
 public class task1 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-        int m = in.nextInt();
-        int[][] array = new int[n][m];
-
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                array[i][j] = i*j ;
-            }
+        byte[] array = new byte[n];
+        for (byte i = 0; i < n; i++) {
+            boolean b = in.nextBoolean();
+            int myByte = (!b) ? 0 : 1;
+            array[i] = (byte) (myByte | i);
         }
-
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                System.out.print(array[i][j] + "\t");
-            }
-            System.out.println();
+            int j = 0;
+            boolean b = (i & (1 << j)) != 0;
+            System.out.print(b + " ");
+            ++j;
         }
     }
 }
