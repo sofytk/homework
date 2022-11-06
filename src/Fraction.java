@@ -15,6 +15,7 @@ public class Fraction {
     static int sumNum;
     static int multDen = 1;
     static int multNum = 1;
+
     Fraction(int numerator, int denominator) {
         nok(denominator, numerator);
         sum(numerator, denominator);
@@ -31,7 +32,7 @@ public class Fraction {
     }
     void nok(int denominator, int numerator){
         sumDen *= denominator;
-        multNum *= numerator;
+
     }
 
     public void sum(int numerator, int denominator) {
@@ -39,6 +40,8 @@ public class Fraction {
     }
 
     public void mult(int numerator, int denominator) {
+        multNum *= numerator;
         multDen = sumDen;
     }
+
 }
